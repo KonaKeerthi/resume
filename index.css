@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color:#081b29;
+    color: cornsilk;
+}
+.header{
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px;
+    align-items: center;
+    z-index: 100;
+    display:inline-flex;
+    justify-content: space-between;
+    position: static;
+}
+.navbar a{
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    color:cornsilk;
+    transition: .3s;
+    z-index: 100;
+}
+.navbar a:hover,.navbar a.active{
+    color:rgb(73, 21, 216);
+}
+/*container*/
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+    gap:2rem;
+    
+}
+.profile{
+    grid-column: 1 / -1;
+    margin-bottom: auto;
+    
+    
+}
+.profileheader{
+    display: flex;
+    max-width: 800px;
+    gap: 2rem;
+}
+.description h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: dodgerblue;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2s;
+}
+.description h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+.description p{
+    margin:10px 0 30px 0;
+    font-size: 18px;
+    
+}
+.image{
+    margin: 15px 20px 10px 0;
+}
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 100%;
+		grid-template-columns: 1fr;
+		padding: 2rem;
+		gap: 5rem;
+	}
+    .profile {
+		margin: 10px;
+	}
+    .profileheader {
+        flex-direction: column;
+        gap:2rem;
+    }
+    .navbar{
+        margin-left: 0.5px;
+    }
+}
+.myskills{
+    display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.education h1 ,.technicalskills h1,.internship h1,.project_info h1,.hobbies h1,.contact h1{
+    font-size: 20px;
+    color: dodgerblue;
+    
+}
+.skills_list,.intern_lists,.hobbies_lists{
+    line-height: 1.5;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.item{
+    margin-top: 15px;
+    line-height: 1.5;
+}
+.item p{
+    font-size: 15px;
+}
+.item h1{
+    font-size: 20px;
+    color: cornsilk;
+    font-weight: normal;
+}
+.project_info p,.contact p{
+    line-height: 1.5;
+    font-size: 15px;
+}
+.project_info,.hobbies{
+    margin-bottom: 30px;
+}
+.footer{
+    background-color: darkgray;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px;
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+    grid-column: 1/-1;
+
+}
+
+
